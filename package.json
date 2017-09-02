@@ -1,0 +1,21 @@
+{
+    "name": "vscode-lsharp-snippets",
+    "displayName": "VSCode-LSharp-Snippets",
+    "description": "Provides snippets to L# source files within Visual Studio Code",
+    "version": "1.0.0",
+    "publisher": "carlubian",
+    "engines": {
+        "vscode": "^1.13.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "ls",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

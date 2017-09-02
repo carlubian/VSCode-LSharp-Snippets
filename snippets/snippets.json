@@ -1,0 +1,122 @@
+{
+    "Interface": {
+        "prefix": "interface",
+        "body": [
+            "public interface ${1:INameHere} >>",
+            "\t${2:unit} ${3:foo}(${4:param});"
+        ],
+        "description": "Interface template"
+    },
+    "Class": {
+        "prefix": "class",
+        "body": [
+            "public class ${1:NameHere} >>",
+            "\tprivate var iable = null;",
+            "\t$0"
+        ],
+        "description": "Class template"
+    },
+    "Enum": {
+        "prefix": "enum",
+        "body": [
+            "public enum ${1:NameHere} >>",
+            "\t${2:FirstValue},",
+            "\t${3:SecondValue}"
+        ],
+        "description": "Enum template"
+    },
+    "App": {
+        "prefix": "app",
+        "body": [
+            "using System;",
+            "",
+            "part of ${1:Namespace.Path.Here};",
+            "",
+            "public static class ${2:Program} >>",
+            "\tEntryPoint >>",
+            "\t\tConsole.WriteLine(\"Hello, World.\");",
+            "\t\t$0"
+        ],
+        "description": "App template"
+    },
+    "Func": {
+        "prefix": "func",
+        "body": [
+            "${1:public} ${2:unit} ${3:foo} >> (${4:args}) =>",
+            "\t$0"
+        ],
+        "description": "Function template"
+    },
+    "Prop": {
+        "prefix": "prop",
+        "body": [
+            "${1:public} ${2:var} ${3:iable};"
+        ],
+        "description": "Property template"
+    },
+    "FullProp": {
+        "prefix": "fullprop",
+        "body": [
+            "${1:public} ${2:var} ${3: iable} = ${4:null};"
+        ],
+        "description": "Full property template"
+    },
+    "If": {
+        "prefix": "if",
+        "body": [
+            "${1:condition} ?",
+            "\tbreak;",
+            ":",
+            "\tbreak;"
+        ],
+        "description": "If statement template"
+    },
+    "Ctor": {
+        "prefix": "ctor",
+        "body": [
+            "public new >> (${1:args}) =>",
+            "\t$0"
+        ],
+        "description": "Constructor template"
+    },
+    "StaticCtor": {
+        "prefix": "sctor",
+        "body": [
+            "static >> () =>",
+            "\t$0"
+        ],
+        "description": "Static constructor template"
+    },
+    "Switch": {
+        "prefix": "switch",
+        "body": [
+            "${1:expression} ??",
+            "\t${2:value1}:",
+            "\t\tbreak;",
+            "\t${3:value2}:",
+            "\t\tbreak;",
+            "?:",
+            "\t\tbreak;"
+        ],
+        "description": "Switch statement template"
+    },
+    "Foreach": {
+        "prefix": "foreach",
+        "body": [
+            "${1:elem} in ${2:collection} =>",
+            "\tbreak;",
+            "\t$0"
+        ],
+        "description": "Foreach loop template"
+    },
+    "While": {
+        "prefix": "while",
+        "body": [
+            "while ${1:n} < ${2:10} =>",
+            "\tn = n + 1;",
+            "\tbreak;",
+            "\t$0"
+        ],
+        "description": "While loop template"
+    }
+}
