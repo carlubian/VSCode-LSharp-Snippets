@@ -2,8 +2,18 @@
     "name": "vscode-lsharp-snippets",
     "displayName": "VSCode-LSharp-Snippets",
     "description": "Provides snippets to L# source files within Visual Studio Code",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "carlubian",
+    "icon": "images/icon-VSCode-LSharp.png",
+    "homepage": "https://github.com/carlubian/VSCode-LSharp-Snippets",
+    "galleryBanner": {
+        "color": "#007ACC",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/carlubian/VSCode-LSharp-Snippets.git"
+    },
     "engines": {
         "vscode": "^1.13.0"
     },
